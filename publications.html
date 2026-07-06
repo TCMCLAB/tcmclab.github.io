@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publications and research highlights from the T&amp;CMC Research Group.">
+  <title>Publications | T&amp;CMC Research Group</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="T&amp;CMC Research Group home">
+        <img class="brand-logo" src="assets/images/logo.png" alt="">
+        <span class="brand-text"><span class="brand-name">T&amp;CMC Research Group</span><span class="brand-subtitle">Theoretical and Computational Materials Chemistry</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html"><span class="nav-icon icon-home" aria-hidden="true"></span><span>Home</span></a><a href="research.html"><span class="nav-icon icon-research" aria-hidden="true"></span><span>Research</span></a><a href="team.html"><span class="nav-icon icon-team" aria-hidden="true"></span><span>Team</span></a><a href="publications.html"><span class="nav-icon icon-publications" aria-hidden="true"></span><span>Publications</span></a><a href="outreach.html"><span class="nav-icon icon-outreach" aria-hidden="true"></span><span>Outreach</span></a><a href="contact.html"><span class="nav-icon icon-contact" aria-hidden="true"></span><span>Contact</span></a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="hero site-banner page-banner">
+      <div class="quantum-animation" aria-hidden="true">
+        <div class="quantum-symbol">
+          <span class="quantum-core"></span>
+          <span class="quantum-ring ring-one"></span>
+          <span class="quantum-ring ring-two"></span>
+          <span class="quantum-ring ring-three"></span>
+          <span class="electron-track track-one"><span class="quantum-electron"></span></span>
+        </div>
+        <div class="schrodinger-equation">i&hbar; &part;&Psi;/&part;t = &#292;&Psi;</div>
+        <span class="orbital orbital-a"></span>
+        <span class="orbital orbital-b"></span>
+        <span class="orbital orbital-c"></span>
+        <span class="wave-line wave-a"></span>
+        <span class="wave-line wave-b"></span>
+        <span class="quantum-node node-a"></span>
+        <span class="quantum-node node-b"></span>
+        <span class="quantum-node node-c"></span>
+        <span class="quantum-node node-d"></span>
+        <span class="quantum-bond bond-a"></span>
+        <span class="quantum-bond bond-b"></span>
+        <span class="quantum-bond bond-c"></span>
+      </div>
+      <div class="container hero-content">
+        <div class="reveal">
+          <div class="hero-lockup">
+            <a class="hero-logo-link" href="index.html" aria-label="T&amp;CMC Research Group home">
+              <img class="hero-logo" src="assets/images/logo.png" alt="T&amp;CMC Research Group logo">
+            </a>
+            <div class="hero-title-stack">
+              <p class="eyebrow">Department of Chemistry, SRM Institute of Science and Technology</p>
+              <h1>T&amp;CMC Research Group</h1>
+              <p class="hero-subtitle">Theoretical and Computational Materials Chemistry</p>
+            </div>
+          </div>
+          <nav class="banner-links" aria-label="Site sections">
+            <a href="research.html"><span class="home-nav-icon icon-research" aria-hidden="true"></span><span>Research</span></a>
+            <a href="publications.html"><span class="home-nav-icon icon-publications" aria-hidden="true"></span><span>Publications</span></a>
+            <a href="team.html"><span class="home-nav-icon icon-team" aria-hidden="true"></span><span>Team</span></a>
+            <a href="outreach.html"><span class="home-nav-icon icon-outreach" aria-hidden="true"></span><span>Outreach</span></a>
+            <a href="contact.html"><span class="home-nav-icon icon-contact" aria-hidden="true"></span><span>Contact</span></a>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Publications</p>
+          <h1>Publications</h1>
+        </div>
+        <section class="scholar-dashboard reveal" aria-labelledby="scholar-dashboard-title">
+          <div class="scholar-dashboard-header">
+            <div>
+              <p class="eyebrow">Research impact</p>
+              <h2 id="scholar-dashboard-title">Publication and citation overview</h2>
+              <p class="scholar-status" data-scholar-status></p>
+            </div>
+            <a class="button secondary scholar-profile-link" data-scholar-link href="https://scholar.google.com/citations?user=wE7PqWgAAAAJ&amp;hl=en" target="_blank" rel="noopener">View Google Scholar</a>
+          </div>
+          <div class="scholar-metrics" data-scholar-metrics aria-label="Google Scholar metrics"></div>
+          <div class="publication-chart-panel">
+            <div class="publication-chart-heading">
+              <div>
+                <p class="eyebrow">Research output</p>
+                <h3>Publications by year</h3>
+              </div>
+              <p>Generated from the verified publication list below.</p>
+            </div>
+            <div class="publication-year-chart" data-publication-year-chart aria-label="Bar chart showing publications by year"></div>
+          </div>
+        </section>
+        <div class="publication-search reveal" role="search">
+          <label for="publication-search">Search publications</label>
+          <input id="publication-search" type="search" data-publication-search placeholder="Search by title, author, journal, year, DOI, or topic">
+          <span data-publication-count></span>
+        </div>
+        <div class="publication-list" data-publications></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>T&amp;CMC Research Group</span><span>&copy; <span data-year></span> Department of Chemistry, SRM Institute of Science and Technology</span></div></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

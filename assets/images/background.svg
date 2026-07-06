@@ -1,0 +1,39 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.58" stop-color="#F7F8FA"/>
+      <stop offset="1" stop-color="#EEF1F5"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" stroke="#10233F" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <g stroke="#B8860B" stroke-opacity=".22" stroke-width="2">
+    <path d="M126 214L270 130L416 214V382L270 466L126 382V214Z"/>
+    <path d="M416 214L566 130L716 214V382L566 466L416 382"/>
+    <path d="M978 142L1120 224L1120 388L978 470L836 388L836 224L978 142Z"/>
+    <path d="M1120 224L1272 140L1424 224L1424 392L1272 476L1120 388"/>
+    <path d="M228 620L360 544L492 620L492 772L360 848L228 772V620Z"/>
+    <path d="M794 620L930 542L1066 620L1066 774L930 852L794 774V620Z"/>
+  </g>
+  <g fill="#10233F" opacity=".34">
+    <circle cx="126" cy="214" r="4"/>
+    <circle cx="270" cy="130" r="5"/>
+    <circle cx="416" cy="214" r="4"/>
+    <circle cx="566" cy="130" r="5"/>
+    <circle cx="716" cy="214" r="4"/>
+    <circle cx="978" cy="142" r="5"/>
+    <circle cx="1120" cy="224" r="4"/>
+    <circle cx="1272" cy="140" r="5"/>
+    <circle cx="1424" cy="224" r="4"/>
+    <circle cx="360" cy="544" r="5"/>
+    <circle cx="930" cy="542" r="5"/>
+  </g>
+  <g stroke="#B8860B" stroke-opacity=".11" stroke-width="3">
+    <path d="M84 746C260 642 372 694 518 590C690 468 796 482 938 570C1080 660 1216 626 1536 468"/>
+    <path d="M96 316C270 410 420 396 562 318C744 220 844 236 1018 326C1190 414 1340 388 1512 284"/>
+  </g>
+</svg>
