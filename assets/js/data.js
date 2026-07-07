@@ -104,21 +104,17 @@ const siteData = {
         {
           degree: "Ph.D. in Theoretical and Computational Chemistry",
           institution: "Indian Institute of Technology Bombay, Mumbai, India",
-          period: "2013-2016",
-          details:
-            "Date of Ph.D. defense: 4 November 2015. Date of Ph.D. award: 24 February 2016. Awarded Excellence in Ph.D. thesis work for 2014-2016 by Indian Institute of Technology Bombay."
+          period: "2013-2016"
         },
         {
           degree: "M.Sc. in Chemistry",
           institution: "The University of Burdwan, Burdwan, India",
-          period: "2009-2011",
-          details: "Percentage: 75.9% (First Class)."
+          period: "2009-2011"
         },
         {
           degree: "B.Sc. in Chemistry Honours",
           institution: "The University of Burdwan, Burdwan, India",
-          period: "2006-2009",
-          details: "Percentage: 66.9% (First Class)."
+          period: "2006-2009"
         }
       ],
       professionalExperience: [
@@ -330,7 +326,7 @@ const siteData = {
       ],
       supervision: [
         {
-          title: "Silda Peters",
+          title: "Dr. Silda Peters",
           page: "silda-peters.html",
           place: "Ph.D. Graduate",
           details: "Computational study of fluorinated Ni based metal-organic frameworks, acidic gas interactions, multicomponent adsorption and diffusion, guest-induced flexibility, thermal response, pore transitions, and node-linker dynamics."
@@ -384,7 +380,7 @@ const siteData = {
         title: "Researchers",
         members: [
           {
-            name: "Silda Peters",
+            name: "Dr. Silda Peters",
             role: "Ph.D. Graduate",
             affiliation: "T&CMC Research Group",
             photo: "assets/images/silda-peters.jpeg",
