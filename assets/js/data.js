@@ -162,87 +162,6 @@ const siteData = {
           advisor: "Professor Sourav Pal"
         }
       ],
-      skills: [
-        "Experienced physical chemist with a strong background in a large breadth of theoretical and computational chemistry techniques.",
-        "Experienced in state-of-the-art wave function based, density functional theory based, semiempirical, and fragment based quantum mechanical methods.",
-        "Experienced in modelling optical and transport properties of low dimensional materials and molecular assemblies, homogeneous and heterogeneous catalysis, nanocluster and surface reaction mechanisms, and prediction of structures, energies, and properties of chemically relevant open- and closed-shell systems in ground and excited states.",
-        "Skilled with Tcsh, Python, Gaussian09, VASP, Q-Chem 4.0, GaussView, Materials Studio, VESTA, Chemcraft, VMD, ChemDraw, SCILAB, MATLAB, and Origin.",
-        "Experienced in collaborative interdisciplinary projects involving theoretical and experimental researchers through MMDL at Indiana University, CMQT, and AMEWS at Northwestern University."
-      ],
-      researchExperience: [
-        {
-          role: "Assistant Professor and Principal Investigator",
-          place: "Theoretical and Computational Materials Chemistry Lab, SRM Institute of Science and Technology, Chennai, India",
-          projects: [
-            "Designing advanced catalysts for sustainable energy and chemical transformations and developing fragmentation based methods applicable to catalysis.",
-            "Understanding gas adsorption, framework flexibility, and molecular interactions in porous materials.",
-            "Harnessing transition metal complexes for next-generation photodynamic therapy."
-          ]
-        },
-        {
-          role: "Postdoctoral Fellow",
-          place: "Northwestern University, Evanston, IL, USA",
-          advisor: "Professor George C. Schatz",
-          projects: [
-            "Functionalized defects in low-dimensional materials for heralded photon emission at CMQT.",
-            "Heavy metal ion separation by 2D materials at AMEWS."
-          ]
-        },
-        {
-          role: "Postdoctoral Fellow",
-          place: "Indiana University, Bloomington, IN, USA",
-          advisor: "Professor Krishnan Raghavachari",
-          projects: [
-            "Electronic excited states and fluorescent properties of organic dye molecules and assemblies at MMDL."
-          ]
-        },
-        {
-          role: "SERB Indo-U.S. Postdoctoral Fellow",
-          place: "Indiana University, Bloomington, IN, USA",
-          advisor: "Professor Krishnan Raghavachari",
-          projects: [
-            "Molecules-in-Molecules fragment based method to study open-shell systems and metal-organic frameworks as catalytic systems."
-          ]
-        },
-        {
-          role: "Postdoctoral Researcher",
-          place: "Institute for Molecular Science, Okazaki, Japan",
-          advisor: "Professor Masahiro Ehara",
-          projects: [
-            "Mechanistic study of hydrosilylation of internal alkynes on AuPd nanoclusters and supported AuPd nanoclusters on TiO2 and Nb2O5 surfaces."
-          ]
-        },
-        {
-          role: "Research Associate and Temporary Project Research Scientist",
-          place: "Indian Institute of Technology Bombay, Mumbai, India",
-          advisor: "Professor Sourav Pal",
-          projects: [
-            "Mechanistic studies of organic carbon monoxide releasing molecules and bond activation on aluminium nanoclusters and graphene-supported aluminium nanoclusters."
-          ]
-        },
-        {
-          role: "Ph.D. Research Scholar",
-          place: "Indian Institute of Technology Bombay, Mumbai, India",
-          advisor: "Professor Anindya Datta; co-advisor Professor S. N. Datta",
-          projects: [
-            "Theoretical and computational investigation of spin-related molecular properties and important molecules involved in photosynthesis."
-          ]
-        },
-        {
-          role: "Temporary Junior Research Fellow",
-          place: "Indian Institute of Technology Bombay, Mumbai, India",
-          advisor: "Professor S. N. Datta",
-          projects: [
-            "Theoretical investigation of magnetism in molecules, molecular magnets, and magnetic materials."
-          ]
-        },
-        {
-          role: "M.Sc. Research Project",
-          place: "The University of Burdwan, Burdwan, India",
-          advisor: "Professor Asok K. Mukherjee",
-          projects: ["Preliminary study of the structure and properties of fullerenes."]
-        }
-      ],
       teachingExperience: [
         {
           heading: "Teaching at SRM Institute of Science and Technology",
@@ -255,20 +174,6 @@ const siteData = {
           ]
         },
         {
-          heading: "Teaching Assistantship at IIT Bombay",
-          period: "01/2013-04/2017",
-          items: [
-            "CH-427 Chemical and Statistical Thermodynamics (Autumn Semester, 2013)",
-            "CH-504 Computational Chemistry (Fall Semester, 2014)",
-            "CH-427 Chemical and Statistical Thermodynamics (Autumn Semester, 2014)",
-            "CH-481 Chemistry and Computers (Autumn Semester, 2014)",
-            "CH-801 Symmetry in Chemistry (Autumn Semester, 2015)",
-            "CH-560 Advanced Quantum Chemistry (Fall Semester, 2015)"
-          ],
-          details:
-            "Responsibilities included creating and delivering tutorials and laboratory sessions, correcting assignments, and evaluating exams."
-        },
-        {
           heading: "Visiting Faculty of Chemistry",
           period: "08/2011-03/2012",
           items: ["Sreegopal Banerjee College, West Bengal, India"]
@@ -277,20 +182,6 @@ const siteData = {
       academicActivities: [
         "Editorial Board member, Scientific Reports (2025-present).",
         "Reviewer for The Journal of Physical Chemistry, ACS Applied Energy Materials, Advanced Powder Technology, Scientific Reports, ChemistrySelect, Spectrochimica Acta Part A, and Bulletin of Materials Science."
-      ],
-      sponsoredProjects: [
-        {
-          period: "2025-2027",
-          title: "Heterogeneous Catalyst Design for CO2 Conversion to Value-Added Chemicals",
-          place: "Selective Excellence Research Initiative Startup Grant, SRM Institute of Science and Technology",
-          details: "Ongoing. Total grant: INR 4,50,000."
-        },
-        {
-          period: "2017-2018",
-          title: "Molecules-in-Molecules Fragment-Based Method for Metal-Organic Framework Catalysis",
-          place: "SERB-IUSSTF, Grant No. 2017/127",
-          details: "Completed. Total grant: INR 26,89,000."
-        }
       ],
       awards: [
         {
@@ -322,56 +213,6 @@ const siteData = {
           period: "2014-2016",
           title: "Excellence in Ph.D. Thesis Work",
           details: "Awarded by the Indian Institute of Technology Bombay."
-        }
-      ],
-      supervision: [
-        {
-          title: "Dr. Silda Peters",
-          page: "silda-peters.html",
-          place: "Ph.D. Graduate",
-          details: "Computational study of fluorinated Ni based metal-organic frameworks, acidic gas interactions, multicomponent adsorption and diffusion, guest-induced flexibility, thermal response, pore transitions, and node-linker dynamics."
-        },
-        {
-          title: "Roshini Arulraj",
-          page: "roshini-arulraj.html",
-          place: "Ph.D. Scholar",
-          details: "Electrochemical energy conversion and storage, with emphasis on advanced electrocatalytic materials for water splitting and alcohol oxidation. Co-supervisor: Dr. <a class=\"text-link\" href=\"https://www.iitk.ac.in/anantharaj-sengeni\" target=\"_blank\" rel=\"noopener\">Anantharaj Sengeni</a>."
-        },
-        {
-          title: "Madhana Gopal",
-          page: "phd-student-3.html",
-          place: "Ph.D. Scholar",
-          details: "Computational catalysis, electrocatalysis for sustainable energy conversion, density functional theory, molecular dynamics, and machine learning."
-        },
-        {
-          title: "Sukesh Babu K",
-          page: "phd-student-4.html",
-          place: "Ph.D. Scholar",
-          details: "Computational chemistry, molecular modelling, docking, drug discovery, drug formulation, and molecular dynamics for cancer drug discovery."
-        },
-        {
-          title: "Moumita Dinda",
-          page: "phd-student-5.html",
-          place: "Ph.D. Scholar",
-          details: "Computational materials chemistry and energy materials, with emphasis on metal-organic frameworks for sustainable hydrogen storage."
-        },
-        {
-          title: "Ragupathy Arivuthurai",
-          page: "phd-student-6.html",
-          place: "Ph.D. Scholar",
-          details: "Computational chemistry and materials modelling of porous framework materials for sustainable hydrogen storage."
-        },
-        {
-          title: "Sundaresan Ravi",
-          page: "bsc-student-1.html",
-          place: "B.S. Chemistry Student",
-          details: "Machine learning and artificial intelligence workflows for computational chemistry and functional materials design."
-        },
-        {
-          title: "Kavya D",
-          page: "kavya-d.html",
-          place: "M.Sc. Alumna",
-          details: "Former M.Sc. project student, currently pursuing a Ph.D. at Baylor University, Texas. Her work with the group involved computational materials chemistry and bioinorganic photochemistry."
         }
       ]
     },

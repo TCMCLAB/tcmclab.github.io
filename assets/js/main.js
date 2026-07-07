@@ -200,6 +200,48 @@ updateHomeBanner();
 window.addEventListener("scroll", updateHomeBanner, { passive: true });
 window.addEventListener("resize", updateHomeBanner);
 
+const roadmapSection = document.querySelector(".profile-roadmap-section");
+const updateProfileRoadmap = () => {
+  if (!roadmapSection) return;
+
+  const isDesktop = window.matchMedia("(min-width: 761px)").matches;
+  const compactAt = roadmapSection.offsetTop + 18;
+  roadmapSection.classList.toggle("is-sticky", isDesktop && window.scrollY > compactAt);
+};
+
+updateProfileRoadmap();
+window.addEventListener("scroll", updateProfileRoadmap, { passive: true });
+window.addEventListener("resize", updateProfileRoadmap);
+
+const setupProfileRoadmapLinks = () => {
+  if (!roadmapSection) return;
+
+  document.querySelectorAll(".roadmap-track a[href^='#']").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
+      const target = targetId ? document.querySelector(targetId) : null;
+
+      if (!target) return;
+
+      event.preventDefault();
+
+      const isDesktop = window.matchMedia("(min-width: 761px)").matches;
+      roadmapSection.classList.toggle("is-sticky", isDesktop);
+
+      window.requestAnimationFrame(() => {
+        const stickyTop = isDesktop ? parseFloat(window.getComputedStyle(roadmapSection).top) || 0 : 0;
+        const offset = isDesktop ? stickyTop + roadmapSection.offsetHeight + 34 : 24;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({ top: Math.max(top, 0), behavior: "smooth" });
+        window.history.pushState(null, "", targetId);
+      });
+    });
+  });
+};
+
+setupProfileRoadmapLinks();
+
 const listMarkup = (items) => items.map((item) => `<li>${item}</li>`).join("");
 
 const escapeHtml = (value = "") =>
@@ -771,12 +813,8 @@ if (window.siteData) {
   const pi = siteData.team.principalInvestigator;
   renderTimeline("[data-pi-education]", pi.education);
   renderTimeline("[data-pi-professional-experience]", pi.professionalExperience);
-  renderTimeline("[data-pi-research-experience]", pi.researchExperience);
   renderTimeline("[data-pi-teaching-experience]", pi.teachingExperience);
-  renderTimeline("[data-pi-sponsored-projects]", pi.sponsoredProjects);
   renderTimeline("[data-pi-awards]", pi.awards);
-  renderTimeline("[data-pi-supervision]", pi.supervision);
-  renderList("[data-pi-skills]", pi.skills);
   renderList("[data-pi-academic-activities]", pi.academicActivities);
   renderScholarDashboard();
   renderPublications();
