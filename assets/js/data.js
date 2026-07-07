@@ -331,43 +331,51 @@ const siteData = {
       supervision: [
         {
           title: "Silda Peters",
-          place: "Ph.D. Scholar",
-          details: "Computational Study of Metal Organic Frameworks for Guest-Induced Flexibility and Catalysis."
+          page: "silda-peters.html",
+          place: "Ph.D. Graduate",
+          details: "Computational study of fluorinated Ni based metal-organic frameworks, acidic gas interactions, multicomponent adsorption and diffusion, guest-induced flexibility, thermal response, pore transitions, and node-linker dynamics."
         },
         {
           title: "Roshini Arulraj",
+          page: "roshini-arulraj.html",
           place: "Ph.D. Scholar",
-          details: "Alkaline HER Electrocatalysis with Catalysts Containing Minimal and No Platinum for Hydrogen Production. Co-supervisor: Dr. Anantharaj Sengeni."
+          details: "Electrochemical energy conversion and storage, with emphasis on advanced electrocatalytic materials for water splitting and alcohol oxidation. Co-supervisor: Dr. <a class=\"text-link\" href=\"https://www.iitk.ac.in/anantharaj-sengeni\" target=\"_blank\" rel=\"noopener\">Anantharaj Sengeni</a>."
         },
         {
           title: "Madhana Gopal",
+          page: "phd-student-3.html",
           place: "Ph.D. Scholar",
-          details: "Exploring Efficient Theoretical and Computational Methods for Novel Catalyst Design."
+          details: "Computational catalysis, electrocatalysis for sustainable energy conversion, density functional theory, molecular dynamics, and machine learning."
         },
         {
           title: "Sukesh Babu K",
+          page: "phd-student-4.html",
           place: "Ph.D. Scholar",
-          details: "A Computational Investigation of Molecules to Materials of Photosensitizers for Photodynamic Therapy."
+          details: "Computational chemistry, molecular modelling, docking, drug discovery, drug formulation, and molecular dynamics for cancer drug discovery."
         },
         {
           title: "Moumita Dinda",
+          page: "phd-student-5.html",
           place: "Ph.D. Scholar",
-          details: "Binder Guided Shaping of Metal-Organic Frameworks: Microscopic Design Principles for High-Performance H2 Storage."
+          details: "Computational materials chemistry and energy materials, with emphasis on metal-organic frameworks for sustainable hydrogen storage."
         },
         {
-          title: "Ragupathy A",
+          title: "Ragupathy Arivuthurai",
+          page: "phd-student-6.html",
           place: "Ph.D. Scholar",
-          details: "First-Principles and Data-Driven Design of Thermo-Responsive Metal-Functionalized 3D Covalent Organic Frameworks for Hydrogen Storage."
+          details: "Computational chemistry and materials modelling of porous framework materials for sustainable hydrogen storage."
         },
         {
-          title: "Sundaresan R",
+          title: "Sundaresan Ravi",
+          page: "bsc-student-1.html",
           place: "B.S. Chemistry Student",
-          details: "Current undergraduate researcher at SRM Institute of Science and Technology."
+          details: "Machine learning and artificial intelligence workflows for computational chemistry and functional materials design."
         },
         {
           title: "Kavya D",
+          page: "kavya-d.html",
           place: "M.Sc. Alumna",
-          details: "Former M.Sc. thesis student; joined the Ph.D. program at Baylor University, Texas, USA, in 2025."
+          details: "Former M.Sc. project student, currently pursuing a Ph.D. at Baylor University, Texas. Her work with the group involved computational materials chemistry and bioinorganic photochemistry."
         }
       ]
     },
@@ -377,11 +385,13 @@ const siteData = {
         members: [
           {
             name: "Silda Peters",
-            role: "PhD Student",
+            role: "Ph.D. Graduate",
             affiliation: "T&CMC Research Group",
             photo: "assets/images/silda-peters.jpeg",
             page: "silda-peters.html",
-            status: "Computational study of metal-organic frameworks for guest-induced flexibility and catalysis.",
+            status: "Computational chemist specializing in molecular simulations of porous materials.",
+            bio:
+              "Dr. Silda Peters is a computational chemist specializing in molecular simulations of porous materials, with a focus on gas adsorption, separation, transport, and framework flexibility. Her doctoral research focused on fluorinated Ni based metal-organic frameworks, where she investigated acidic gas interactions, multicomponent adsorption and diffusion, guest-induced flexibility, thermal response, pore transitions, and node-linker dynamics using molecular dynamics, grand canonical Monte Carlo simulations, and density functional theory. Her broader research experience includes zeolites, flexible MOFs, corrosion inhibition, defect-engineered organic frameworks, photocatalytic and electrocatalytic materials, energy storage systems, optical materials, and photoactive metal complexes for anticancer applications.",
             degreeAwarded: "June 2026",
             vivaVoce: "25 June 2026",
             links: [
@@ -403,49 +413,125 @@ const siteData = {
             name: "Roshini Arulraj",
             role: "PhD Student",
             affiliation: "T&CMC Research Group",
-            photo: "assets/images/logo.png",
+            photo: "assets/images/roshini-arulraj.jpeg",
             page: "roshini-arulraj.html",
-            status: "Alkaline HER electrocatalysis with catalysts containing minimal and no platinum for hydrogen production."
+            status: "Electrochemical energy conversion and storage.",
+            bio:
+              "Roshini Arulraj is a doctoral researcher in Chemistry specializing in electrochemical energy conversion and storage. Her research focuses on the design and development of advanced electrocatalytic materials by integrating experimental and computational approaches. She investigates structure-property relationships and catalytic mechanisms to improve the activity, selectivity, and stability of catalysts for sustainable energy applications, including water splitting and alcohol oxidation. Her work aims to support the development of high-performance materials for next-generation clean energy technologies.",
+            links: [
+              {
+                label: "Google Scholar",
+                url: "https://scholar.google.com/citations?user=HELA0lEAAAAJ&hl=en"
+              },
+              {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/in/roshini-arulraj-140782203/"
+              }
+            ]
           },
           {
             name: "Madhana Gopal",
             role: "PhD Student",
             affiliation: "T&CMC Research Group",
-            photo: "assets/images/logo.png",
+            photo: "assets/images/madhana-gopal.jpeg",
             page: "phd-student-3.html",
-            status: "Researches theoretical and computational methods for novel catalyst design."
+            status: "Computational catalysis and data-driven materials design.",
+            bio:
+              "Madhana Gopal's research focuses on computational catalysis, with particular emphasis on electrocatalysis for sustainable energy conversion. He employs density functional theory, molecular dynamics, and machine learning to investigate electronic structure, adsorption behaviour, reaction mechanisms, and structure-property relationships in catalytic materials. By integrating first-principles simulations with data-driven approaches, his work provides fundamental insights into catalytic processes and supports the rational design of advanced materials for energy conversion and storage applications.",
+            links: [
+              {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/in/madhana-gopal-com-chem/"
+              },
+              {
+                label: "Google Scholar",
+                url: "https://scholar.google.com/citations?hl=en&user=bMNbRUEAAAAJ"
+              },
+              {
+                label: "ResearchGate",
+                url: "https://www.researchgate.net/profile/Madhana-Gopal-3?ev=hdr_xprf"
+              },
+              {
+                label: "ORCID",
+                url: "https://orcid.org/0009-0000-6358-3264"
+              }
+            ]
           },
           {
             name: "Sukesh Babu K",
             role: "PhD Student",
             affiliation: "T&CMC Research Group",
-            photo: "assets/images/logo.png",
+            photo: "assets/images/sukesh.jpeg",
             page: "phd-student-4.html",
-            status: "Studies photosensitizers for photodynamic therapy from molecules to materials."
+            status: "Computational chemistry for medicinal and pharmaceutical sciences.",
+            bio:
+              "Sukesh Babu K's research focuses on computational chemistry, molecular modelling, molecular docking, drug discovery, drug formulation, and molecular dynamics. His work involves metal-based ligand docking, protein residue analysis, and the use of advanced computational tools to study chemical interactions relevant to cancer drug discovery. His research reflects a strong interest in applying computational chemistry to address real-world challenges in medicinal and pharmaceutical sciences.",
+            links: [
+              {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/in/sukesh-babu-k/"
+              }
+            ]
           },
           {
             name: "Moumita Dinda",
             role: "PhD Student",
             affiliation: "T&CMC Research Group",
-            photo: "assets/images/logo.png",
+            photo: "assets/images/moumita-dinda.jpeg",
             page: "phd-student-5.html",
-            status: "Studies binder-guided shaping of MOFs for hydrogen storage."
+            status: "Computational materials chemistry for hydrogen storage.",
+            bio:
+              "Moumita Dinda received her M.Sc. in Applied Chemistry from Maulana Abul Kalam Azad University of Technology, West Bengal, in 2025. Her Ph.D. research focuses on computational materials chemistry and energy materials, with particular emphasis on the rational design of metal-organic frameworks for sustainable hydrogen storage. She employs density functional theory, molecular dynamics, grand canonical Monte Carlo simulations, and machine learning to investigate hydrogen adsorption mechanisms, structure-property relationships, and the development of high-performance porous materials for clean energy applications. Her broader research experience also includes computational studies of metal-free perovskites and carbon allotropes, along with experimental work on visible-light-responsive photocatalysts for hydrogen peroxide production at IISc Bangalore.",
+            links: [
+              {
+                label: "Google Scholar",
+                url: "https://scholar.google.com/citations?hl=en&user=895KirUAAAAJ"
+              },
+              {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/in/moumitadinda/"
+              },
+              {
+                label: "ResearchGate",
+                url: "https://www.researchgate.net/profile/Moumita-Dinda"
+              }
+            ]
           },
           {
-            name: "Ragupathy A",
+            name: "Ragupathy Arivuthurai",
             role: "PhD Student",
             affiliation: "T&CMC Research Group",
-            photo: "assets/images/logo.png",
+            photo: "assets/images/ragupathy-a.jpeg",
             page: "phd-student-6.html",
-            status: "Studies data-driven thermo-responsive covalent organic frameworks for hydrogen storage."
+            status: "Porous framework materials for sustainable hydrogen storage.",
+            bio:
+              "Ragupathy Arivuthurai's research focuses on computational chemistry and materials modelling, with particular emphasis on porous framework materials for sustainable hydrogen storage. He employs density functional theory, molecular dynamics, grand canonical Monte Carlo simulations, phonon calculations, and AI/ML approaches to investigate electronic structure, hydrogen adsorption, lattice dynamics, thermodynamic behaviour, and structure-property relationships. By combining first-principles simulations with data-driven methods, his work provides molecular-level insight into hydrogen storage mechanisms and supports the rational design of next-generation materials for clean energy applications.",
+            links: [
+              {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/in/ragupathy-a-31540b202/"
+              }
+            ]
           },
           {
-            name: "Sundaresan R",
+            name: "Sundaresan Ravi",
             role: "B.S. Chemistry Student",
             affiliation: "T&CMC Research Group",
-            photo: "assets/images/logo.png",
+            photo: "assets/images/sundaresan-r.jpeg",
             page: "bsc-student-1.html",
-            status: "Current undergraduate researcher at SRM Institute of Science and Technology."
+            status: "Machine learning and AI for computational chemistry.",
+            bio:
+              "Sundaresan Ravi's research focuses on the application of machine learning and artificial intelligence to computational chemistry. His work involves developing data-driven predictive models for transition metal complexes and functionalized materials using density functional theory calculations as training data. By bridging classical electronic structure methods with modern AI-driven workflows, his research aims to accelerate molecular discovery and support the rational design of functional materials.",
+            links: [
+              {
+                label: "Website",
+                url: "https://sundaresanravi-aichem.github.io/"
+              },
+              {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/in/sundaresanravi/"
+              }
+            ]
           }
         ]
       },
@@ -456,9 +542,17 @@ const siteData = {
             name: "Kavya D",
             role: "MSc Alumni",
             affiliation: "PhD Student at Baylor University since 2025",
-            photo: "assets/images/logo.png",
+            photo: "assets/images/kavya-d.jpeg",
             page: "kavya-d.html",
-            status: "Former M.Sc. thesis student, currently pursuing a Ph.D. at Baylor University, Texas, USA."
+            status: "Former M.Sc. project student, currently pursuing a Ph.D. at Baylor University, Texas, USA.",
+            bio:
+              "Kavya D. completed her M.Sc. project with the T&CMC Research Group and is currently pursuing her Ph.D. at Baylor University, Texas. Her research work with the group focused on computational materials chemistry and bioinorganic photochemistry. She investigated transition metal ion intercalation in WS2 for enhancing supercapacitive performance using first-principles calculations. She also worked on graphene-functionalized iridium complexes for improved photodynamic therapy through computational modelling. Her research experience reflects an interest in applying quantum chemical methods to energy storage materials and therapeutic molecular systems.",
+            links: [
+              {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/in/d-kavyaharish/"
+              }
+            ]
           }
         ]
       }

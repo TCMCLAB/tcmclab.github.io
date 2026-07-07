@@ -51,7 +51,7 @@ const siteBannerMarkup = `
       <div class="reveal">
         <div class="hero-lockup">
           <a class="hero-logo-link" href="index.html" aria-label="T&CMC Research Group home">
-            <img class="hero-logo" src="assets/images/logo.png" alt="T&CMC Research Group logo">
+            <img class="hero-logo" src="assets/images/logo.jpeg" alt="T&CMC Research Group logo">
           </a>
           <div class="hero-title-stack">
             <p class="eyebrow">Department of Chemistry, SRM Institute of Science and Technology</p>
@@ -104,6 +104,74 @@ if (headerInner && navToggle) {
     updateThemeToggle(themeToggle);
   });
 }
+
+const setupLogoSpotlight = () => {
+  const logoPath = "assets/images/logo.jpeg";
+  let previousFocus = null;
+  const spotlight = document.createElement("div");
+  spotlight.className = "logo-spotlight";
+  spotlight.setAttribute("role", "dialog");
+  spotlight.setAttribute("aria-modal", "true");
+  spotlight.setAttribute("aria-label", "T&CMC Research Group logo preview");
+  spotlight.hidden = true;
+  spotlight.innerHTML = `
+    <button class="logo-spotlight-close" type="button" aria-label="Close logo preview"></button>
+    <div class="logo-spotlight-panel">
+      <img src="${logoPath}" alt="T&CMC Research Group logo">
+      <span class="logo-spotlight-title">T&CMC Research Group</span>
+      <div class="logo-spotlight-actions">
+        <a class="logo-home-link" href="index.html">
+          <span class="nav-icon icon-home" aria-hidden="true"></span>
+          <span>Go Home</span>
+        </a>
+        <button class="logo-spotlight-stay" type="button">Stay Here</button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(spotlight);
+
+  const closeButton = spotlight.querySelector(".logo-spotlight-close");
+  const stayButton = spotlight.querySelector(".logo-spotlight-stay");
+  const homeLink = spotlight.querySelector(".logo-home-link");
+
+  const closeSpotlight = () => {
+    spotlight.classList.remove("is-open");
+    document.body.classList.remove("logo-spotlight-open");
+    window.setTimeout(() => {
+      spotlight.hidden = true;
+    }, 180);
+    previousFocus?.focus?.();
+  };
+
+  const openSpotlight = () => {
+    previousFocus = document.activeElement;
+    spotlight.hidden = false;
+    window.requestAnimationFrame(() => {
+      spotlight.classList.add("is-open");
+      document.body.classList.add("logo-spotlight-open");
+      homeLink.focus();
+    });
+  };
+
+  document.addEventListener("click", (event) => {
+    const logo = event.target.closest(".brand-logo, .hero-logo, .theme-tree-core img, .theme-orbit-core img");
+    if (!logo) return;
+
+    event.preventDefault();
+    openSpotlight();
+  });
+
+  spotlight.addEventListener("click", (event) => {
+    if (event.target === spotlight || event.target === closeButton || event.target === stayButton) closeSpotlight();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !spotlight.hidden) closeSpotlight();
+  });
+};
+
+setupLogoSpotlight();
 
 document.querySelectorAll(".site-nav a, .banner-links a").forEach((link) => {
   const href = link.getAttribute("href");
@@ -233,7 +301,7 @@ const renderThemes = () => {
           <path class="tree-branch branch-nine" d="M500 210 C472 188 528 188 500 166" />
         </svg>
         <div class="theme-tree-core">
-          <img src="assets/images/logo.png" alt="">
+          <img src="assets/images/logo.jpeg" alt="">
           <strong>T&CMC</strong>
           <span>Research Themes</span>
         </div>
@@ -262,7 +330,7 @@ const renderThemes = () => {
     const total = siteData.researchThemes.length;
     target.innerHTML = `
       <div class="theme-orbit-core">
-        <img src="assets/images/logo.png" alt="T&CMC Research Group logo">
+        <img src="assets/images/logo.jpeg" alt="T&CMC Research Group logo">
         <strong>T&CMC</strong>
         <span>Research Themes</span>
       </div>
@@ -432,13 +500,21 @@ const renderTeamDirectory = () => {
   `;
 };
 
+const timelineHeadingMarkup = (item) => {
+  const heading = item.title || item.degree || item.heading || item.role || "";
+  const safeHeading = escapeHtml(heading);
+
+  if (!item.page) return safeHeading;
+  return `<a class="timeline-title-link" href="${item.page}">${safeHeading}</a>`;
+};
+
 const timelineMarkup = (items) =>
   items
     .map(
       (item) => `
         <article class="timeline-item reveal">
           <span class="timeline-period">${item.period || ""}</span>
-          <h3>${item.title || item.degree || item.heading || item.role}</h3>
+          <h3>${timelineHeadingMarkup(item)}</h3>
           ${item.institution ? `<p>${item.institution}</p>` : ""}
           ${item.place ? `<p>${item.place}</p>` : ""}
           ${item.advisor ? `<p><strong>Advisor:</strong> ${item.advisor}</p>` : ""}
@@ -454,6 +530,27 @@ const renderTimeline = (selector, items) => {
   const target = document.querySelector(selector);
   if (!target || !items) return;
   target.innerHTML = timelineMarkup(items);
+};
+
+const profileLinkBrand = (link) => {
+  const url = link.href.toLowerCase();
+  const label = link.textContent.trim();
+
+  if (url.includes("linkedin.com")) return { brand: "linkedin", icon: "in", label: label || "LinkedIn" };
+  if (url.includes("scholar.google.com")) return { brand: "scholar", icon: "GS", label: label || "Google Scholar" };
+  if (url.includes("researchgate.net")) return { brand: "researchgate", icon: "RG", label: label || "ResearchGate" };
+  if (url.includes("orcid.org")) return { brand: "orcid", icon: "iD", label: label || "ORCID" };
+  return { brand: "website", icon: "WWW", label: label || "Website" };
+};
+
+const enhanceProfileLinks = () => {
+  document.querySelectorAll(".profile-links a").forEach((link) => {
+    const { brand, icon, label } = profileLinkBrand(link);
+    link.dataset.brand = brand;
+    link.dataset.icon = icon;
+    link.setAttribute("aria-label", label);
+    link.setAttribute("title", label);
+  });
 };
 
 const renderTeamPlaceholders = () => {
@@ -686,6 +783,8 @@ if (window.siteData) {
   renderHomeNews();
   renderComingSoonCards("[data-videos]", siteData.videos);
 }
+
+enhanceProfileLinks();
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
